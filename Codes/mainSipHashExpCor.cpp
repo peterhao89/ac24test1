@@ -2,7 +2,7 @@
 #include "basics.h"
 #include <fstream>
 #include <string>
-//#include<windows.h>
+#include<windows.h>
 #include<omp.h>
 #include <iostream>
 #include<vector>
@@ -197,7 +197,7 @@ void getSipHashExpDlCorGiven1Diff1MaskIdx(string fileName, uint8_t inDiffIdx[], 
 }
 
 
-int main()
+void main()
 {
 #if 0 //verify our new 2.5DL 
 	int start = 0, end = 2.5;

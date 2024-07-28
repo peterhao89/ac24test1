@@ -2,7 +2,7 @@
 #include "basics.h"
 #include <fstream>
 #include <string>
-//#include<windows.h>
+#include<windows.h>
 #include<omp.h>
 #include <iostream>
 #include<vector>
@@ -66,7 +66,7 @@ void getAlzetteExpDlCorGiven1Diff1MaskIdx(string fileName, uint8_t inDiffIdx[], 
 {
 	float startTime = omp_get_wtime();
 	double cnt = 0;
-	int useCoreNumber = thread::hardware_concurrency() / 2;
+	int useCoreNumber = thread::hardware_concurrency() / 2; cout << useCoreNumber << endl;
 	omp_set_num_threads(useCoreNumber);
 	ofstream fout(fileName, ios::out);
 #pragma omp parallel for reduction(+:cnt)
@@ -329,9 +329,9 @@ void getAlzetteExpLcCorGivenInOutMasks(string fileName, uint32_t inMask[2], uint
 }
 
 
-int main()
+void main()
 {
-#if 0 //verify 7DL for our new 13- and 14-round DL
+#if 1 //verify 7DL for our new 13- and 14-round DL
 	int start = 3, end = 10;
 	uint8_t inDiffIdx[1] = { 29 };
 	uint8_t outMaskIdx[2] = { 1 + 32 };
@@ -344,7 +344,7 @@ int main()
 	int start = 2, end = 8;
 	uint8_t inDiffIdx[1] = { 16 + 32 };
 	uint8_t outMaskIdx[2] = { 6 + 32, 5 + 32 };
-	string fileName = "Alzette " + to_string(end - start) + "DL(R" + to_string(start) + "toR" + to_string(end) + "), verify [][16] to [][6,5].txt";
+	string fileName = "Alzette " + to_string(end - start) + "DL(R" + to_string(start) + " to R" + to_string(end) + "), verify [][16] to [][6,5].txt";
 	getAlzetteExpDlCorGiven1Diff1MaskIdx(fileName, inDiffIdx, 1, outMaskIdx, 2, start, end, pow(2, 34));
 #endif
 
@@ -352,7 +352,7 @@ int main()
 	int start = 2, end = 9;
 	uint8_t inDiffIdx[1] = { 25 + 32 };
 	uint8_t outMaskIdx[2] = { 15 + 32, 14 + 32 };
-	string fileName = "Alzette " + to_string(end - start) + "DL(R" + to_string(start) + "toR" + to_string(end) + "), verify [][25] to [][15,14].txt";
+	string fileName = "Alzette " + to_string(end - start) + "DL(R" + to_string(start) + " to R" + to_string(end) + "), verify [][25] to [][15,14].txt";
 	getAlzetteExpDlCorGiven1Diff1MaskIdx(fileName, inDiffIdx, 1, outMaskIdx, 2, start, end, pow(2, 38));
 #endif
 
@@ -361,18 +361,18 @@ int main()
 	int start = 2, end = 8;
 	uint8_t inDiffIdx[64] = { 0 }; for (auto i = 0; i < 32; i++) { inDiffIdx[i] = i + 32; inDiffIdx[i + 32] = i; }
 	uint8_t outMaskIdx[64] = { 0 }; for (auto i = 0; i < 32; i++) { outMaskIdx[i] = i + 32; outMaskIdx[i + 32] = i; }
-	string fileName = "Alzette " + to_string(end - start) + "DL(R" + to_string(start) + "toR" + to_string(end) + ") SUBs sets.txt";
+	string fileName = "Alzette " + to_string(end - start) + "DL(R" + to_string(start) + " to R" + to_string(end) + ") SUBs sets.txt";
 	getAlzetteSubsSetDiffWt1(fileName, inDiffIdx, 64, outMaskIdx, 64, start, end, -9.5, pow(double(2), 31));
 #endif
 
-#if 1
+#if 0
 	uint32_t endMask[][2] = { {0x8b0a0205,0x81020484},{0x8e0a0205,0x81020684},{0x898a0205,0x81020584},{0x898a0205,0x81020584} };
 	int start = 10, end = 14;
 	uint32_t inMask[2] = { 0, getInt32(1) };
 	string fileName = "Alzette " + to_string(end - start) + "LC(R" + to_string(start) + " to R" + to_string(end) + "), verify.txt";
 	for (auto i = 0; i < 4; i++)
 	{
-		getAlzetteExpLcCorGivenInOutMasks(fileName, inMask, endMask[i], start, end, pow(2, 30));
+		getAlzetteExpLcCorGivenInOutMasks(fileName, inMask, endMask[i], start, end, pow(2, 26));
 	}
 #endif
 }

@@ -99,4 +99,4 @@ Speck32 4DL experimental COR : [19]->[19], -0.198717, -2.33121
 Speck32 4DL experimental COR : [19]->[19], -0.259255, -1.94756
 Speck32 4DL experimental COR : [19]->[19], -0.26937, -1.89234
 Speck32 4DL AVERAGE experimental COR : [19]->[19], -0.269285, -1.89279
-Multi time:46116.5
+Multi time:22832.5

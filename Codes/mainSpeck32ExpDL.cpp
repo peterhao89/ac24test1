@@ -1,7 +1,7 @@
 #include "basics.h"
 #include <fstream>
 #include <string>
-//#include<windows.h>
+#include<windows.h>
 #include<omp.h>
 #include <iostream>
 using namespace std;
@@ -39,6 +39,8 @@ void getSpeck32ExpDlCorGiven1Diff1MaskIdx(string fileName, uint8_t oneInDiffIdx[
     float start_time = omp_get_wtime();
     double tot = 0;
     ofstream fout(fileName, ios::out | ios::app);
+    int useCoreNumber = thread::hardware_concurrency() / 2; cout << useCoreNumber << endl;
+    omp_set_num_threads(useCoreNumber);
     for (int r = 0; r < testNum; r++)
     {
         for (int i = 0; i < 4; i++)
@@ -57,6 +59,7 @@ void getSpeck32ExpDlCorGiven1Diff1MaskIdx(string fileName, uint8_t oneInDiffIdx[
             l[i + 3] = mid;
         }
         double cnt = 0; 
+#pragma omp parallel for reduction(+:cnt,tot)
         for (int64_t expr = 0; expr < datasize; expr++) 
         {
             TYPE input[2] = { 0 };
@@ -145,7 +148,7 @@ void getSpeck32ExpDlCorGiven1Diff1MaskIdx(string fileName, uint8_t oneInDiffIdx[
     fout.close();
 }
 
-int main()
+void main()
 {
 #if 1
     int start = 3, end = 7;
@@ -153,16 +156,16 @@ int main()
     uint8_t oneInDiffIdx[1] = { 3 + 16 };
     uint8_t oneOutMaskIdx[1] = { 3 + 16 };
     string fileName = "Speck32 " + to_string(round) + "DL, verify [][3] to [][3].txt";
-    getSpeck32ExpDlCorGiven1Diff1MaskIdx(fileName, oneInDiffIdx, 1, oneOutMaskIdx, 1, start, end, pow(2, 33), 100);
+    getSpeck32ExpDlCorGiven1Diff1MaskIdx(fileName, oneInDiffIdx, 1, oneOutMaskIdx, 1, start, end, pow(2, 32), 100);
 #endif
 
 #if 0
     int start = 3, end = 7;
     int round = end - start;
-    uint8_t oneInDiffIdx[1] = { 3 + 16 };
+    uint8_t oneInDiffIdx[1] = { 10 + 16 };
     uint8_t oneOutMaskIdx[1] = { 3 + 16 };
     string fileName = "Speck32 " + to_string(round) + "DL, verify [][10] to [][3].txt";
-    getSpeck32ExpDlCorGiven1Diff1MaskIdx(fileName, oneInDiffIdx, 1, oneOutMaskIdx, 1, start, end, pow(2, 33), 100);
+    getSpeck32ExpDlCorGiven1Diff1MaskIdx(fileName, oneInDiffIdx, 1, oneOutMaskIdx, 1, start, end, pow(2, 32), 100);
 #endif
 
 }

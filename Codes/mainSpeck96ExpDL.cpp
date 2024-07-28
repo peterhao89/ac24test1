@@ -2,7 +2,7 @@
 #include "basics.h"
 #include <fstream>
 #include <string>
-//#include<windows.h>
+#include<windows.h>
 #include<omp.h>
 #include <iostream>
 #include<vector>
@@ -106,8 +106,8 @@ void getSpeck96ExpDlCorGiven1Diff1MaskIdx(string fileName, uint8_t oneInDiffIdx[
 		int round = end - start;
 		double cntD = cnt / datasize;
 		double cor = log(abs(cntD)) / log(2);
-		std::printf("Speck96 %dDL(R%d to R%d) experimental COR: [", round, start, end);
-		fout << "Speck96: " << dec << end - start << "DL(R" << start << " to R" << end << ") experimental COR: [";
+		std::printf("Speck96 %dDL experimental COR: [", round);
+		fout << "Speck96 " << dec << round << "DL experimental COR : [";
 		for (auto j = 0; j < diffLen; j++)
 		{
 			int a = oneInDiffIdx[j];
@@ -123,15 +123,15 @@ void getSpeck96ExpDlCorGiven1Diff1MaskIdx(string fileName, uint8_t oneInDiffIdx[
 			else { cout << "], "; fout << "], "; }
 
 		}
-		cout << cntD << ", " << cor << endl; fout << cntD << ", " << cor << endl;
+		cout << cntD << "," << cor << endl; fout << cntD << "," << cor << endl;
 	}
 	int round = end - start;
 	if (tot)
 	{
 		double totD = tot / datasize / testNum;
 		double cor = log(abs(totD)) / log(2);
-		std::printf("Speck96 %dDL(R%d to R%d) AVERAGE experimental COR: [", round, start, end);
-		fout << "Speck96: " << dec << end - start << "DL(R" << start << " to R" << end << ") AVERAGE experimental COR: [";
+		std::printf("Speck96 %dDL AVERAGE experimental COR: [", round);
+		fout << "Speck96 " << dec << round << "DL AVERAGE experimental COR : [";
 		for (auto j = 0; j < diffLen; j++)
 		{
 			int a = oneInDiffIdx[j];
@@ -147,7 +147,7 @@ void getSpeck96ExpDlCorGiven1Diff1MaskIdx(string fileName, uint8_t oneInDiffIdx[
 			else { cout << "], "; fout << "], "; }
 
 		}
-		cout << totD << ", " << cor << endl; fout << totD << ", " << cor << endl;
+		cout << totD << "," << cor << endl; fout << totD << "," << cor << endl;
 	}
 	float end_time = omp_get_wtime();
 	std::printf("Multi time: %f\n", end_time - start_time);
@@ -315,7 +315,7 @@ void getSpeck96ExpLcCorGivenDiffMask(string fileName, TYPE inMask[2], TYPE outMa
 	fout.close();
 }
 
-int main()
+void main()
 {
 #if 0 //prepare SUBs sets for 6DL
 	int start = 4, end = 10;
@@ -332,7 +332,7 @@ int main()
 	uint8_t inDiffIdx[1] = { 43 + 48 };
 	uint8_t outMaskIdx[2] = { 10 + 48, 9 + 48 };
 	string fileName = "Speck96 " + to_string(round) + "DL, verify [][43] to [][10,9].txt";
-	getSpeck96ExpDlCorGiven1Diff1MaskIdx(fileName, inDiffIdx, 1, outMaskIdx, 1, start, end, pow(2, 35), 100);
+	getSpeck96ExpDlCorGiven1Diff1MaskIdx(fileName, inDiffIdx, 1, outMaskIdx, 2, start, end, pow(2, 35), 100);
 #endif
 
 #if 1 //verify our 8DL for 16-round

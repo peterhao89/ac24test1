@@ -2,7 +2,7 @@
 #include "basics.h"
 #include <fstream>
 #include <string>
-//#include<windows.h>
+#include<windows.h>
 #include<omp.h>
 #include <iostream>
 #include<vector>
@@ -41,7 +41,7 @@ void getSpeck64ExpDlCorGiven1Diff1MaskIdx(string fileName, uint8_t oneInDiffIdx[
 	float start_time = omp_get_wtime();
 	double tot = 0;
 	ofstream fout(fileName, ios::out);
-	int useCoreNumber = thread::hardware_concurrency() / 2;
+	int useCoreNumber = thread::hardware_concurrency() / 2; cout << useCoreNumber << endl;
 	omp_set_num_threads(useCoreNumber);
 	for (int r = 0; r < testNum; r++)
 	{
@@ -239,7 +239,7 @@ void getSpeck64SubsSetDiffWt1(string fileName, uint8_t inDiffIdx[], int diffNum,
 
 }
 
-int main()
+void main()
 {
 #if 0 //verify our new 5DL for 11-round
 	int start = 3, end = 8;
@@ -273,7 +273,7 @@ int main()
 	int round = end - start;
 	uint8_t oneInDiffIdx[1] = { 7 };
 	uint8_t oneOutMaskIdx[] = { 5 + 32 };
-	string fileName = "Speck64 " + to_string(round) + "DL, verify [7][] to [][5].txt";
+	string fileName = "Speck64 " + to_string(round) + "DL, verify [7][] to [][5] by Lv.txt";
 	getSpeck64ExpDlCorGiven1Diff1MaskIdx(fileName, oneInDiffIdx, 1, oneOutMaskIdx, 1, start, end, pow(2, 30), 50);
 #endif
 
@@ -282,7 +282,7 @@ int main()
 	int round = end - start;
 	uint8_t oneInDiffIdx[1] = { 21 + 32 };
 	uint8_t oneOutMaskIdx[] = { 5 + 32 };
-	string fileName = "Speck64 " + to_string(round) + "DL, verify [][21] to [][5].txt";
+	string fileName = "Speck64 " + to_string(round) + "DL, verify [][21] to [][5] by Lv.txt";
 	getSpeck64ExpDlCorGiven1Diff1MaskIdx(fileName, oneInDiffIdx, 1, oneOutMaskIdx, 1, start, end, pow(2, 30), 50);
 #endif
 

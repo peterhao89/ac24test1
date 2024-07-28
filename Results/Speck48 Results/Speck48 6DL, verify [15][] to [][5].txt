@@ -1,52 +1,52 @@
-Speck48 6DL experimental COR : ([15],[])->([],[5]): -6.78944
-Speck48 6DL experimental COR : ([15],[])->([],[5]): -6.59318
-Speck48 6DL experimental COR : ([15],[])->([],[5]): -7.47405
-Speck48 6DL experimental COR : ([15],[])->([],[5]): -5.73234
-Speck48 6DL experimental COR : ([15],[])->([],[5]): -7.57298
-Speck48 6DL experimental COR : ([15],[])->([],[5]): -8.33109
-Speck48 6DL experimental COR : ([15],[])->([],[5]): -6.16605
-Speck48 6DL experimental COR : ([15],[])->([],[5]): -5.94536
-Speck48 6DL experimental COR : ([15],[])->([],[5]): -7.94081
-Speck48 6DL experimental COR : ([15],[])->([],[5]): -8.19812
-Speck48 6DL experimental COR : ([15],[])->([],[5]): -6.70548
-Speck48 6DL experimental COR : ([15],[])->([],[5]): -8.33105
-Speck48 6DL experimental COR : ([15],[])->([],[5]): -6.18996
-Speck48 6DL experimental COR : ([15],[])->([],[5]): -6.81193
-Speck48 6DL experimental COR : ([15],[])->([],[5]): -6.58632
-Speck48 6DL experimental COR : ([15],[])->([],[5]): -6.16803
-Speck48 6DL experimental COR : ([15],[])->([],[5]): -7.60057
-Speck48 6DL experimental COR : ([15],[])->([],[5]): -7.5257
-Speck48 6DL experimental COR : ([15],[])->([],[5]): -6.65825
-Speck48 6DL experimental COR : ([15],[])->([],[5]): -7.35689
-Speck48 6DL experimental COR : ([15],[])->([],[5]): -7.34676
-Speck48 6DL experimental COR : ([15],[])->([],[5]): -5.69132
-Speck48 6DL experimental COR : ([15],[])->([],[5]): -7.65772
-Speck48 6DL experimental COR : ([15],[])->([],[5]): -7.56469
-Speck48 6DL experimental COR : ([15],[])->([],[5]): -5.97324
-Speck48 6DL experimental COR : ([15],[])->([],[5]): -7.31151
-Speck48 6DL experimental COR : ([15],[])->([],[5]): -6.49758
-Speck48 6DL experimental COR : ([15],[])->([],[5]): -6.94635
-Speck48 6DL experimental COR : ([15],[])->([],[5]): -7.62062
-Speck48 6DL experimental COR : ([15],[])->([],[5]): -7.24302
-Speck48 6DL experimental COR : ([15],[])->([],[5]): -7.18737
-Speck48 6DL experimental COR : ([15],[])->([],[5]): -7.30207
-Speck48 6DL experimental COR : ([15],[])->([],[5]): -7.42745
-Speck48 6DL experimental COR : ([15],[])->([],[5]): -6.4326
-Speck48 6DL experimental COR : ([15],[])->([],[5]): -7.7046
-Speck48 6DL experimental COR : ([15],[])->([],[5]): -8.44473
-Speck48 6DL experimental COR : ([15],[])->([],[5]): -6.14407
-Speck48 6DL experimental COR : ([15],[])->([],[5]): -7.58745
-Speck48 6DL experimental COR : ([15],[])->([],[5]): -6.17847
-Speck48 6DL experimental COR : ([15],[])->([],[5]): -6.55085
-Speck48 6DL experimental COR : ([15],[])->([],[5]): -7.26539
-Speck48 6DL experimental COR : ([15],[])->([],[5]): -6.66529
-Speck48 6DL experimental COR : ([15],[])->([],[5]): -5.84431
-Speck48 6DL experimental COR : ([15],[])->([],[5]): -7.1612
-Speck48 6DL experimental COR : ([15],[])->([],[5]): -7.44353
-Speck48 6DL experimental COR : ([15],[])->([],[5]): -7.21323
-Speck48 6DL experimental COR : ([15],[])->([],[5]): -7.24095
-Speck48 6DL experimental COR : ([15],[])->([],[5]): -6.70398
-Speck48 6DL experimental COR : ([15],[])->([],[5]): -7.42942
-Speck48 6DL experimental COR : ([15],[])->([],[5]): -6.84613
-Speck48 6DL AVERAGE experimental COR : ([15],[])->([],[5]): -6.85882
-Multi time:8455
+Speck48 6DL experimental COR : [15]->[29], 0.009040135, -6.78944
+Speck48 6DL experimental COR : [15]->[29], 0.010357503, -6.59318
+Speck48 6DL experimental COR : [15]->[29], 0.005624537, -7.47405
+Speck48 6DL experimental COR : [15]->[29], 0.018810213, -5.73234
+Speck48 6DL experimental COR : [15]->[29], 0.005251772, -7.57298
+Speck48 6DL experimental COR : [15]->[29], 0.003105217, -8.33109
+Speck48 6DL experimental COR : [15]->[29], 0.013926244, -6.16605
+Speck48 6DL experimental COR : [15]->[29], 0.016228124, -5.94536
+Speck48 6DL experimental COR : [15]->[29], 0.004069846, -7.94081
+Speck48 6DL experimental COR : [15]->[29], 0.003405022, -8.19812
+Speck48 6DL experimental COR : [15]->[29], 0.00958185, -6.70548
+Speck48 6DL experimental COR : [15]->[29], 0.003105304, -8.33105
+Speck48 6DL experimental COR : [15]->[29], 0.013697344, -6.18996
+Speck48 6DL experimental COR : [15]->[29], 0.008900302, -6.81193
+Speck48 6DL experimental COR : [15]->[29], 0.01040687, -6.58632
+Speck48 6DL experimental COR : [15]->[29], 0.013907144, -6.16803
+Speck48 6DL experimental COR : [15]->[29], 0.005152292, -7.60057
+Speck48 6DL experimental COR : [15]->[29], 0.005426734, -7.5257
+Speck48 6DL experimental COR : [15]->[29], 0.009900726, -6.65825
+Speck48 6DL experimental COR : [15]->[29], 0.00610036, -7.35689
+Speck48 6DL experimental COR : [15]->[29], 0.006143344, -7.34676
+Speck48 6DL experimental COR : [15]->[29], 0.019352718, -5.69132
+Speck48 6DL experimental COR : [15]->[29], 0.004952182, -7.65772
+Speck48 6DL experimental COR : [15]->[29], 0.005282037, -7.56469
+Speck48 6DL experimental COR : [15]->[29], 0.015917527, -5.97324
+Speck48 6DL experimental COR : [15]->[29], 0.006295296, -7.31151
+Speck48 6DL experimental COR : [15]->[29], 0.011067092, -6.49758
+Speck48 6DL experimental COR : [15]->[29], 0.008108496, -6.94635
+Speck48 6DL experimental COR : [15]->[29], 0.005081183, -7.62062
+Speck48 6DL experimental COR : [15]->[29], 0.006601365, -7.24302
+Speck48 6DL experimental COR : [15]->[29], 0.006860978, -7.18737
+Speck48 6DL experimental COR : [15]->[29], 0.006336623, -7.30207
+Speck48 6DL experimental COR : [15]->[29], 0.005809179, -7.42745
+Speck48 6DL experimental COR : [15]->[29], 0.011576958, -6.4326
+Speck48 6DL experimental COR : [15]->[29], 0.004793848, -7.7046
+Speck48 6DL experimental COR : [15]->[29], 0.002870007, -8.44473
+Speck48 6DL experimental COR : [15]->[29], 0.01414004, -6.14407
+Speck48 6DL experimental COR : [15]->[29], 0.005199361, -7.58745
+Speck48 6DL experimental COR : [15]->[29], 0.013806869, -6.17847
+Speck48 6DL experimental COR : [15]->[29], 0.010665904, -6.55085
+Speck48 6DL experimental COR : [15]->[29], 0.006499795, -7.26539
+Speck48 6DL experimental COR : [15]->[29], 0.00985253, -6.66529
+Speck48 6DL experimental COR : [15]->[29], 0.017405535, -5.84431
+Speck48 6DL experimental COR : [15]->[29], 0.00698657, -7.1612
+Speck48 6DL experimental COR : [15]->[29], 0.005744791, -7.44353
+Speck48 6DL experimental COR : [15]->[29], 0.006739092, -7.21323
+Speck48 6DL experimental COR : [15]->[29], 0.006610843, -7.24095
+Speck48 6DL experimental COR : [15]->[29], 0.009591818, -6.70398
+Speck48 6DL experimental COR : [15]->[29], 0.005801252, -7.42942
+Speck48 6DL experimental COR : [15]->[29], 0.008691796, -6.84613
+Speck48 6DL AVERAGE experimental COR : [15]->[29], 0.008615678, -6.85882
+Multi time:8576		

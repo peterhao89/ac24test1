@@ -2,7 +2,7 @@
 #include "basics.h"
 #include <fstream>
 #include <string>
-//#include<windows.h>
+#include<windows.h>
 #include<omp.h>
 #include <iostream>
 #include<vector>
@@ -132,7 +132,7 @@ void getSpeck48ExpDlCorGiven1Diff1MaskIdx(string fileName, uint8_t oneInDiffIdx[
 	float start_time = omp_get_wtime();
 	double tot = 0;
 	ofstream fout(fileName, ios::out);
-	int useCoreNumber = thread::hardware_concurrency() / 2;
+	int useCoreNumber = thread::hardware_concurrency() / 2; cout << useCoreNumber << endl;
 	omp_set_num_threads(useCoreNumber);
 	for (int r = 0; r < testNum; r++)
 	{
@@ -239,7 +239,7 @@ void getSpeck48ExpDlCorGiven1Diff1MaskIdx(string fileName, uint8_t oneInDiffIdx[
 }
 
 
-int main()
+void main()
 {
 #if 0 //prepare SUBs set for 5DL
 	int start = 2, end = 7;
@@ -256,7 +256,7 @@ int main()
 	uint8_t oneInDiffIdx[1] = { 15 };
 	uint8_t oneOutMaskIdx[1] = { 5 + 24 };
 	string fileName = "Speck48 " + to_string(round) + "DL, verify [15][] to [][5].txt";
-	getSpeck48ExpDlCorGiven1Diff1MaskIdx(fileName, oneInDiffIdx, 1, oneOutMaskIdx, 1, start, end, pow(2, 30), 50);
+	getSpeck48ExpDlCorGiven1Diff1MaskIdx(fileName, oneInDiffIdx, 1, oneOutMaskIdx, 1, start, end, pow(2, 32), 50);
 #endif
 
 }

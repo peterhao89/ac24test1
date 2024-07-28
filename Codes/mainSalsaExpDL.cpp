@@ -2,7 +2,7 @@
 #include "basics.h"
 #include <fstream>
 #include <string>
-//#include<windows.h>
+#include<windows.h>
 #include<omp.h>
 #include <iostream>
 #include<vector>
@@ -766,7 +766,7 @@ void getSalsaExpLcCorGivenInOutMasks_r28r32_partition(string fileName, uint32_t 
 
 }
 
-int main()
+void main()
 {
 #if 1 // prepare R1 to R3.5 sub
 	int start = 2, end = 7;

@@ -2,7 +2,7 @@
 #include "basics.h"
 #include <fstream>
 #include <string>
-//#include<windows.h>
+#include<windows.h>
 #include<omp.h>
 #include <iostream>
 #include<vector>
@@ -46,6 +46,8 @@ void getSpeck128ExpDlCorGiven1Diff1MaskIdx(string fileName, uint8_t oneInDiffIdx
 	float start_time = omp_get_wtime();
 	double tot = 0;
 	ofstream fout(fileName, ios::out);
+	int useCoreNumber = thread::hardware_concurrency() / 2; cout << useCoreNumber << endl;
+	omp_set_num_threads(useCoreNumber);
 	for (int r = 0; r < testNum; r++)
 	{
 		for (int i = 0; i < 4; i++)
@@ -64,6 +66,7 @@ void getSpeck128ExpDlCorGiven1Diff1MaskIdx(string fileName, uint8_t oneInDiffIdx
 			l[i + 3] = mid;
 		}
 		double cnt = 0;
+#pragma omp parallel for reduction(+:cnt,tot)
 		for (int64_t expr = 0; expr < datasize; expr++)
 		{
 			TYPE input[2] = { 0 };
@@ -251,7 +254,7 @@ void getSpeck128SubsSetDiffWt1(string fileName, uint8_t inDiffIdx[], int diffNum
 	fout.close();
 }
 
-int main()
+void main()
 {
 
 #if 0 //prepare SUBs set for 8DL
@@ -263,7 +266,7 @@ int main()
 	getSpeck128SubsSetDiffWt1(fileName, inDiffIdx, 128, outMaskIdx, 128, round, -8, pow(2, 28), 10);
 #endif
 
-#if 1 //verify our new 9DL for 18-round
+#if 0 //verify our new 9DL for 18-round
 	int round = 9;
 	uint8_t oneInDiffIdx[1] = { 50 };
 	uint8_t oneOutMaskIdx[] = { 2 + 64 };
@@ -271,7 +274,7 @@ int main()
 	getSpeck128ExpDlCorGiven1Diff1MaskIdx(fileName, oneInDiffIdx, 1, oneOutMaskIdx, 1, round, pow(2, 34), 50);
 #endif
 
-#if 0//verify AC23 paper 8DL, convert to 9DL 
+#if 1//verify AC23 paper 8DL, convert to 9DL 
 	int round = 9;
 	uint8_t oneInDiffIdx[1] = { 53 };
 	uint8_t oneOutMaskIdx[] = { 5 + 64 };

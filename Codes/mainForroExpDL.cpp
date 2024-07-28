@@ -2,7 +2,7 @@
 #include "basics.h"
 #include <fstream>
 #include <string>
-//#include<windows.h>
+#include<windows.h>
 #include<omp.h>
 #include <iostream>
 #include<vector>
@@ -299,7 +299,7 @@ double getForroExpLcCorGivenInOutMasks(string fileName, uint32_t inMask[16], uin
 }
 
 
-int main()
+void main()
 {
 
 #if testNewLcsToR21

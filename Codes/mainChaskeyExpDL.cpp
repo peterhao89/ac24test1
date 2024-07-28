@@ -2,7 +2,7 @@
 #include "basics.h"
 #include <fstream>
 #include <string>
-//#include<windows.h>
+#include<windows.h>
 #include<omp.h>
 #include <iostream>
 #include<vector>
@@ -45,7 +45,7 @@ void getChaskeyExpDlCorGiven1Diff1MaskIdx(string fileName, uint8_t oneInDiffIdx[
 	float start_time = omp_get_wtime();
 	double cnt = 0;
 	ofstream fout(fileName, ios::out);
-	int useCoreNumber = thread::hardware_concurrency() / 2;
+	int useCoreNumber = thread::hardware_concurrency() / 2; cout << useCoreNumber << endl;
 	omp_set_num_threads(useCoreNumber);
 #pragma omp parallel for reduction(+:cnt)
 	for (int64_t exper = 0; exper < datasize; exper++)
@@ -102,13 +102,13 @@ void getChaskeyExpDlCorGiven1Diff1MaskIdx(string fileName, uint8_t oneInDiffIdx[
 	fout.close();
 }
 
-int main()
+void main()
 {
 #if 1 // Chaskey 7DL=1.5DC + 4DL + 1.5LC, verify our new 4DL, v0[31] to v3[11]
 	double start = 1.5, end = 5.5;
 	uint8_t oneInDiffIdx[1] = { 31 + 32 * 0 };
 	uint8_t oneOutMaskIdx[1] = { 11 + 32 * 3 };
-	string fileName = "Chaskey 4DL(R1.5 to R5.5), verify [31][][][] to [][][][11].txt";
-	getChaskeyExpDlCorGiven1Diff1MaskIdx(fileName, oneInDiffIdx, 1, oneOutMaskIdx, 1, 2 * start, 2 * end, pow(2, 33));
+	string fileName = "Chaskey 4DL(R1.5 to R5.5), verify v0[31] to v3[11].txt";
+	getChaskeyExpDlCorGiven1Diff1MaskIdx(fileName, oneInDiffIdx, 1, oneOutMaskIdx, 1, 2 * start, 2 * end, pow(2, 34));
 #endif
 }

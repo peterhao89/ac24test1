@@ -49,3 +49,4 @@ Speck128 9DL experimental COR : [53]->[69], 0.00109695, -9.83229
 Speck128 9DL experimental COR : [53]->[69], 0.000350346, -11.4789
 Speck128 9DL experimental COR : [53]->[69], 0.0011569, -9.75551
 Speck128 9DL AVERAGE experimental COR : [53]->[69], 0.000429392, -11.1854
+Multi time:98351
