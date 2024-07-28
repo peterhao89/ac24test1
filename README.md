@@ -25,13 +25,8 @@ For example, we can verify our experimental DL results on Alzette by running the
 ./testAlzette
 ``
 
-<<<<<<< HEAD
 Our verfications are fully implemented on a workstation with two CPUs (Intel(R) Xeon(R) Silver 4210 CPU @2.20GHz 2.19 GHz) and 64.0GB RAM. The operation system is Windows 10 and the codes are compiled with Visual Studio 2022 accelerated with openmp utilizing all 40 threads.
 Some of the testing informations and results on Speck family are as follows:
-=======
-Our verifications are fully implemented on a workstation, running with Windows 10, Intel(R) Xeon(R) Silver 4210 CPU @2.20GHz 2.19 GHz and 64.0GB RAM.
-Some of the testing information and results on the Speck family are as follows:
->>>>>>> 635d3ada2ac9f483171a933651f220233baaf8bd
 
 |Cipher |DL approximation |Sample Size|   Key Number|Running Time (sec)|Ref.
 |----|----|----|----|----|----|
