@@ -1,0 +1,2 @@
+Chaskey 8DL(r3->r11) experimental COR: v0[31]->v3[11], -0.00248156, -8.65454
+Multi time: 3100.75

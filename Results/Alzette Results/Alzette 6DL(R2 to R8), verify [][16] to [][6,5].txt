@@ -1,0 +1,1 @@
+Alzette: 6DL(R2 to R8) experimental COR: ([],[16])->([],[6,5]), -0.0108172, -6.53052908

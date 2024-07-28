@@ -1,0 +1,2 @@
+Alzette: 7DL(R3 to R10) experimental COR: [v0(29)]->[33], 0.00156021, -9.32405
+Multi time:623.5

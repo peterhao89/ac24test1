@@ -1,0 +1,3 @@
+COR=1
+SipHash: 2DL(R0 to R2) experimental COR: [191]->[65], 3.35544e+07, 1, 0
+Time: 5.5

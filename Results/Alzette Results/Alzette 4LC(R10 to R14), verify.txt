@@ -1,0 +1,8 @@
+Alzette: 4LC(R10 to R14) experimental COR: (0,2)->(8b0a0205,81020484), 0.0225666, -5.46967
+Multi time:80.25
+Alzette: 4LC(R10 to R14) experimental COR: (0,2)->(8e0a0205,81020684), 0.0224498, -5.47716
+Multi time:88.875
+Alzette: 4LC(R10 to R14) experimental COR: (0,2)->(898a0205,81020584), 0.0224808, -5.47516
+Multi time:83.625
+Alzette: 4LC(R10 to R14) experimental COR: (0,2)->(898a0205,81020584), 0.0224265, -5.47865
+Multi time:92.25

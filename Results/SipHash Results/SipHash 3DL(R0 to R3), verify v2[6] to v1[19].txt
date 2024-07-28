@@ -1,0 +1,2 @@
+SipHash: 3DL(R0 to R3) experimental COR: [134]->[83], 3.05782e+07, 0.9113, -0.134002
+Time: 5.875

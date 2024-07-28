@@ -1,0 +1,194 @@
+Threshold of the absolute correlation weight:  8
+bit index: 0
+strong unbalanced bits are 32(-7.56831)  48(-7.47904)  
+the number of strong unbalanced bit is 2
+bit index: 1
+strong unbalanced bits are 49(-6.78484)  63(-7.73345)  
+the number of strong unbalanced bit is 2
+bit index: 2
+strong unbalanced bits are 0(-7.26196)  21(-7.98575)  32(-6.09499)  53(-7.25678)  
+the number of strong unbalanced bit is 4
+bit index: 3
+strong unbalanced bits are 1(-7.16476)  33(-5.54761)  41(-7.32312)  43(-7.82623)  54(-7.8324)  57(-7.3404)  
+the number of strong unbalanced bit is 6
+bit index: 4
+strong unbalanced bits are 34(-7.04209)  42(-6.7881)  52(-7.27652)  58(-7.79845)  
+the number of strong unbalanced bit is 4
+bit index: 5
+strong unbalanced bits are 32(-6.18314)  43(-6.89374)  45(-7.8369)  56(-7.92931)  
+the number of strong unbalanced bit is 4
+bit index: 6
+strong unbalanced bits are 4(-7.33321)  25(-7.03913)  33(-5.078)  36(-6.62641)  54(-6.57047)  57(-5.87488)  
+the number of strong unbalanced bit is 6
+bit index: 7
+strong unbalanced bits are 5(-7.87982)  26(-7.15986)  34(-7.05424)  37(-6.50675)  45(-6.96963)  58(-6.41583)  61(-7.14051)  
+the number of strong unbalanced bit is 7
+bit index: 8
+strong unbalanced bits are 38(-7.76989)  56(-6.68785)  
+the number of strong unbalanced bit is 2
+bit index: 9
+strong unbalanced bits are 47(-7.80322)  49(-7.84486)  57(-6.77181)  
+the number of strong unbalanced bit is 3
+bit index: 10
+strong unbalanced bits are 32(-7.54701)  48(-7.15798)  61(-7.35295)  
+the number of strong unbalanced bit is 3
+bit index: 11
+strong unbalanced bits are 1(-7.86825)  33(-6.22311)  41(-7.85012)  49(-6.73305)  
+the number of strong unbalanced bit is 4
+bit index: 12
+strong unbalanced bits are 34(-7.85559)  42(-7.91885)  50(-7.82704)  63(-7.46429)  
+the number of strong unbalanced bit is 4
+bit index: 13
+strong unbalanced bits are 0(-6.55367)  32(-5.34641)  43(-7.56978)  61(-7.96327)  
+the number of strong unbalanced bit is 4
+bit index: 14
+strong unbalanced bits are 1(-6.07061)  33(-5.02945)  36(-7.984)  52(-7.88208)  54(-7.75876)  
+the number of strong unbalanced bit is 5
+bit index: 15
+strong unbalanced bits are 33(-6.97171)  34(-6.72991)  45(-7.71912)  53(-7.43898)  
+the number of strong unbalanced bit is 4
+bit index: 16
+strong unbalanced bits are 32(-4.3244)  35(-7.99374)  54(-6.97131)  
+the number of strong unbalanced bit is 3
+bit index: 17
+strong unbalanced bits are 33(-6.15421)  
+the number of strong unbalanced bit is 1
+bit index: 18
+strong unbalanced bits are 32(-7.20664)  34(-7.88876)  48(-7.86894)  58(-7.92703)  
+the number of strong unbalanced bit is 4
+bit index: 19
+strong unbalanced bits are 33(-6.86078)  35(-6.52697)  38(-7.88079)  49(-7.25146)  57(-6.54006)  
+the number of strong unbalanced bit is 5
+bit index: 20
+strong unbalanced bits are 50(-7.90551)  
+the number of strong unbalanced bit is 1
+bit index: 21
+strong unbalanced bits are 51(-7.7708)  
+the number of strong unbalanced bit is 1
+bit index: 22
+strong unbalanced bits are 41(-7.53666)  49(-7.44304)  52(-7.72495)  
+the number of strong unbalanced bit is 3
+bit index: 23
+strong unbalanced bits are 53(-7.602)  61(-7.13665)  
+the number of strong unbalanced bit is 2
+bit index: 24
+strong unbalanced bits are 0(-6.74962)  32(-6.32253)  43(-7.34343)  54(-7.79246)  62(-7.7838)  
+the number of strong unbalanced bit is 5
+bit index: 25
+strong unbalanced bits are 1(-6.67774)  33(-5.83014)  41(-7.06317)  63(-7.22795)  
+the number of strong unbalanced bit is 4
+bit index: 26
+strong unbalanced bits are 32(-5.74096)  42(-7.36371)  45(-7.68775)  
+the number of strong unbalanced bit is 3
+bit index: 27
+strong unbalanced bits are 33(-4.71145)  35(-7.74768)  43(-7.46641)  49(-7.04571)  57(-6.83115)  
+the number of strong unbalanced bit is 5
+bit index: 28
+strong unbalanced bits are 4(-7.18009)  34(-6.16823)  36(-6.36445)  50(-7.50266)  58(-6.66498)  
+the number of strong unbalanced bit is 5
+bit index: 29
+strong unbalanced bits are 35(-7.58943)  45(-7.1663)  48(-7.58871)  
+the number of strong unbalanced bit is 3
+bit index: 30
+strong unbalanced bits are 6(-7.60249)  17(-6.75547)  36(-6.07548)  38(-7.89808)  49(-5.79545)  57(-6.51664)  60(-7.62133)  
+the number of strong unbalanced bit is 7
+bit index: 31
+strong unbalanced bits are 7(-6.35748)  18(-6.24427)  21(-7.91236)  29(-6.45513)  37(-5.32209)  39(-5.74187)  47(-7.07967)  49(-7.83899)  50(-5.54593)  53(-6.51824)  58(-7.29747)  61(-5.61533)  
+the number of strong unbalanced bit is 12
+bit index: 32
+strong unbalanced bits are 0(-6.98649)  8(-5.32435)  11(-7.29351)  32(-4.02159)  38(-6.86911)  39(-4.73122)  40(-3.34689)  43(-7.17463)  46(-7.52014)  48(-6.72314)  54(-7.01541)  62(-5.93163)  
+the number of strong unbalanced bit is 12
+bit index: 33
+strong unbalanced bits are 1(-6.73583)  9(-4.479)  31(-7.37788)  32(-5.41871)  33(-4.39471)  39(-7.17063)  40(-4.62)  41(-2.90269)  44(-7.85585)  47(-7.36591)  49(-5.75092)  52(-7.93143)  63(-5.48047)  
+the number of strong unbalanced bit is 13
+bit index: 34
+strong unbalanced bits are 0(-5.55889)  10(-4.83411)  13(-7.50197)  21(-7.85225)  32(-3.42706)  34(-6.62948)  40(-6.81162)  41(-4.10581)  42(-2.58538)  45(-7.41289)  48(-7.08102)  50(-7.26138)  53(-7.22151)  56(-7.5162)  
+the number of strong unbalanced bit is 14
+bit index: 35
+strong unbalanced bits are 1(-5.33786)  3(-7.39476)  11(-4.66474)  32(-5.41836)  33(-3.34557)  35(-7.25929)  41(-5.88481)  42(-3.58814)  43(-2.46753)  49(-6.22035)  54(-7.6036)  57(-6.27928)  
+the number of strong unbalanced bit is 12
+bit index: 36
+strong unbalanced bits are 1(-7.98876)  2(-6.73065)  4(-6.6488)  12(-4.54546)  15(-7.96877)  26(-7.56301)  33(-5.44465)  34(-4.48543)  36(-5.85293)  42(-5.09361)  43(-3.3801)  44(-2.90321)  47(-7.86917)  49(-7.88273)  50(-6.80274)  52(-7.35363)  58(-6.30321)  
+the number of strong unbalanced bit is 17
+bit index: 37
+strong unbalanced bits are 3(-6.13393)  13(-4.47478)  16(-7.39186)  32(-5.65988)  34(-7.83228)  35(-5.40179)  37(-6.91011)  43(-5.19353)  44(-4.29837)  45(-2.33449)  48(-7.1872)  51(-7.34828)  53(-6.46051)  56(-7.79309)  59(-7.75796)  
+the number of strong unbalanced bit is 15
+bit index: 38
+strong unbalanced bits are 4(-4.74122)  6(-7.65008)  14(-4.89427)  17(-5.64906)  25(-6.32962)  28(-7.65128)  33(-5.29917)  35(-7.87552)  36(-3.90658)  38(-5.99175)  44(-6.63741)  45(-3.24716)  46(-2.7437)  49(-5.58867)  52(-6.68654)  54(-6.24808)  57(-5.43241)  60(-6.81746)  
+the number of strong unbalanced bit is 18
+bit index: 39
+strong unbalanced bits are 4(-5.89448)  5(-4.26093)  7(-4.99376)  14(-7.42595)  15(-3.38105)  17(-7.2233)  18(-5.16873)  21(-6.32653)  25(-7.5633)  26(-4.98742)  29(-5.06142)  34(-5.57206)  36(-4.45416)  37(-2.96545)  39(-4.01988)  45(-4.04693)  46(-3.52155)  47(-2.25386)  49(-7.23065)  50(-5.11774)  52(-6.59223)  53(-5.22146)  55(-7.9788)  57(-6.59535)  58(-4.92945)  60(-7.60764)  61(-4.47052)  63(-7.66389)  
+the number of strong unbalanced bit is 28
+bit index: 40
+strong unbalanced bits are 6(-7.53098)  16(-5.22883)  22(-7.95935)  32(-7.24286)  38(-5.79082)  40(-7.07088)  46(-7.25711)  47(-4.14548)  48(-2.71486)  51(-7.91854)  54(-6.68984)  62(-7.62417)  
+the number of strong unbalanced bit is 12
+bit index: 41
+strong unbalanced bits are 7(-7.6598)  17(-4.6899)  39(-5.97746)  41(-7.05627)  47(-6.13183)  48(-3.99054)  49(-2.32764)  57(-5.91741)  63(-6.99085)  
+the number of strong unbalanced bit is 9
+bit index: 42
+strong unbalanced bits are 0(-6.35805)  8(-7.28028)  18(-4.08008)  21(-7.07639)  29(-7.53585)  32(-5.69086)  40(-5.84728)  42(-6.98333)  48(-5.54388)  49(-3.10811)  50(-2.6171)  53(-6.90068)  56(-7.25295)  58(-7.16009)  61(-6.99672)  
+the number of strong unbalanced bit is 15
+bit index: 43
+strong unbalanced bits are 1(-6.52704)  9(-7.18005)  19(-4.42961)  22(-7.60743)  33(-5.13519)  41(-5.71041)  43(-6.85138)  49(-4.89063)  50(-3.94303)  51(-2.78729)  54(-7.55151)  57(-6.30331)  
+the number of strong unbalanced bit is 12
+bit index: 44
+strong unbalanced bits are 10(-7.06151)  20(-4.22013)  31(-7.71499)  33(-7.78453)  34(-6.47386)  42(-5.19769)  44(-6.90998)  50(-5.75348)  51(-3.88856)  52(-2.58329)  58(-6.64768)  63(-7.05502)  
+the number of strong unbalanced bit is 12
+bit index: 45
+strong unbalanced bits are 0(-5.47884)  3(-7.66315)  11(-7.26132)  21(-4.69151)  24(-7.56901)  32(-4.69942)  35(-7.64085)  42(-7.85032)  43(-5.18448)  45(-6.7234)  51(-6.61429)  52(-3.98866)  53(-2.36924)  56(-7.54489)  59(-7.59024)  61(-6.89756)  
+the number of strong unbalanced bit is 16
+bit index: 46
+strong unbalanced bits are 1(-4.78238)  4(-6.34684)  12(-6.59767)  14(-7.98746)  22(-4.21137)  25(-5.58155)  28(-7.99482)  32(-7.17285)  33(-3.96435)  36(-5.8377)  43(-7.63602)  44(-5.4033)  46(-6.65813)  52(-5.80253)  53(-3.32655)  54(-2.03224)  57(-5.51219)  60(-6.9014)  62(-6.94574)  
+the number of strong unbalanced bit is 19
+bit index: 47
+strong unbalanced bits are 1(-7.55309)  2(-6.25259)  5(-6.47959)  13(-6.16234)  15(-7.9804)  23(-3.92205)  25(-7.40137)  26(-5.97903)  29(-7.11651)  33(-6.13414)  34(-5.37447)  36(-7.98974)  37(-5.45655)  42(-7.11698)  44(-7.75562)  45(-5.00217)  47(-6.67152)  53(-4.84487)  54(-2.91744)  55(-2.75579)  57(-7.30538)  58(-5.91393)  61(-5.92446)  63(-5.60088)  
+the number of strong unbalanced bit is 24
+bit index: 48
+strong unbalanced bits are 14(-7.40154)  24(-4.94433)  32(-6.34907)  35(-7.52134)  38(-6.98728)  46(-5.75154)  48(-7.08804)  54(-5.22173)  55(-4.78794)  56(-2.8551)  62(-7.52688)  
+the number of strong unbalanced bit is 11
+bit index: 49
+strong unbalanced bits are 15(-7.18416)  25(-4.47422)  33(-5.14034)  36(-7.57522)  39(-7.49737)  47(-5.69283)  49(-6.69496)  55(-7.53905)  56(-4.23157)  57(-2.34322)  63(-6.95746)  
+the number of strong unbalanced bit is 11
+bit index: 50
+strong unbalanced bits are 0(-7.58916)  16(-7.3981)  26(-4.25379)  29(-7.31088)  32(-6.59342)  34(-6.94766)  37(-7.41907)  40(-7.7895)  48(-5.47909)  50(-6.93336)  56(-6.34115)  57(-3.30313)  58(-2.54418)  61(-7.16898)  
+the number of strong unbalanced bit is 14
+bit index: 51
+strong unbalanced bits are 1(-6.80022)  6(-7.63147)  17(-6.98821)  19(-7.9391)  27(-4.53198)  30(-7.93818)  33(-5.26736)  35(-7.21099)  38(-7.65088)  41(-6.94266)  49(-5.07658)  51(-6.62123)  57(-4.91324)  58(-3.78331)  59(-2.77088)  62(-7.84447)  
+the number of strong unbalanced bit is 16
+bit index: 52
+strong unbalanced bits are 18(-7.36033)  20(-7.93186)  28(-5.23812)  31(-7.37224)  33(-7.83893)  34(-6.62477)  36(-6.78252)  42(-7.14674)  49(-7.79562)  50(-5.52417)  52(-6.65359)  58(-6.66792)  59(-4.63369)  60(-3.02028)  63(-7.21022)  
+the number of strong unbalanced bit is 15
+bit index: 53
+strong unbalanced bits are 0(-5.28746)  19(-7.28674)  29(-5.1375)  32(-5.18158)  35(-7.94178)  37(-7.60679)  43(-6.8548)  51(-5.40353)  53(-6.68651)  59(-7.58074)  60(-4.32099)  61(-2.52594)  
+the number of strong unbalanced bit is 12
+bit index: 54
+strong unbalanced bits are 1(-5.14115)  4(-7.40982)  9(-7.37133)  20(-6.68879)  30(-4.59589)  33(-4.92534)  36(-6.71208)  38(-7.09212)  41(-7.09039)  44(-7.46946)  49(-7.55506)  51(-7.98528)  52(-5.44745)  54(-6.72456)  60(-5.94133)  61(-3.47208)  62(-2.79418)  
+the number of strong unbalanced bit is 17
+bit index: 55
+strong unbalanced bits are 1(-7.11315)  2(-6.67622)  10(-7.83661)  21(-6.66557)  31(-4.15992)  33(-6.55835)  34(-6.55716)  37(-6.58374)  39(-7.36718)  42(-7.31809)  45(-6.81102)  53(-5.42437)  55(-7.05073)  61(-5.11526)  62(-3.95821)  63(-2.53036)  
+the number of strong unbalanced bit is 16
+bit index: 56
+strong unbalanced bits are 0(-5.02264)  3(-7.86312)  22(-6.83846)  32(-2.261)  35(-7.73196)  38(-7.58462)  40(-7.44966)  43(-7.18087)  46(-7.17808)  54(-5.36499)  56(-7.06822)  62(-6.36601)  63(-3.89085)  
+the number of strong unbalanced bit is 13
+bit index: 57
+strong unbalanced bits are 1(-4.89686)  23(-7.65298)  32(-3.41088)  33(-2.04132)  36(-7.99349)  39(-7.71575)  41(-6.9539)  47(-7.29343)  54(-7.97358)  55(-6.18536)  57(-6.80416)  63(-5.63737)  
+the number of strong unbalanced bit is 12
+bit index: 58
+strong unbalanced bits are 2(-5.32964)  24(-7.26392)  32(-5.13418)  33(-2.90244)  34(-2.49072)  40(-7.76431)  42(-6.73364)  45(-7.16946)  48(-7.08067)  56(-5.80073)  58(-6.95723)  
+the number of strong unbalanced bit is 11
+bit index: 59
+strong unbalanced bits are 1(-7.757)  3(-4.1787)  6(-7.51893)  14(-7.93897)  17(-7.86163)  25(-7.41738)  32(-7.91341)  33(-4.18446)  34(-3.4054)  35(-2.36735)  38(-7.48035)  41(-7.10874)  43(-6.25322)  49(-6.44206)  57(-5.22695)  59(-6.77992)  
+the number of strong unbalanced bit is 16
+bit index: 60
+strong unbalanced bits are 4(-5.2205)  7(-7.90358)  26(-7.36386)  34(-5.72751)  35(-3.7896)  36(-2.67046)  39(-7.91402)  42(-7.00239)  47(-7.79934)  50(-7.25028)  57(-7.95743)  58(-5.38478)  60(-6.84625)  
+the number of strong unbalanced bit is 13
+bit index: 61
+strong unbalanced bits are 5(-4.46804)  27(-7.08133)  29(-7.93518)  32(-7.85299)  35(-5.71226)  36(-3.93174)  37(-2.73384)  43(-6.8778)  45(-6.65729)  48(-7.5921)  51(-7.06953)  58(-7.91868)  59(-5.62842)  61(-6.71355)  
+the number of strong unbalanced bit is 14
+bit index: 62
+strong unbalanced bits are 4(-7.96879)  6(-4.39021)  9(-7.24733)  17(-7.33428)  28(-7.10481)  33(-7.93113)  36(-5.69471)  37(-3.83541)  38(-2.97941)  41(-7.16466)  44(-7.69803)  49(-6.77278)  52(-6.92526)  57(-7.4829)  60(-5.76775)  62(-7.25251)  
+the number of strong unbalanced bit is 16
+bit index: 63
+strong unbalanced bits are 6(-6.96691)  7(-5.01198)  10(-7.91537)  29(-7.10172)  37(-5.82906)  38(-4.49085)  39(-3.29315)  42(-7.92828)  45(-7.04181)  47(-6.6398)  50(-7.72398)  53(-6.79849)  61(-5.57699)  63(-6.89511)  
+the number of strong unbalanced bit is 14
+Multi time:123716
