@@ -2,7 +2,7 @@
 #include "basics.h"
 #include <fstream>
 #include <string>
-#include<windows.h>
+//#include<windows.h>
 #include<omp.h>
 #include <iostream>
 #include<vector>
@@ -102,7 +102,7 @@ void getChaskeyExpDlCorGiven1Diff1MaskIdx(string fileName, uint8_t oneInDiffIdx[
 	fout.close();
 }
 
-void main()
+int main()
 {
 #if 1 // Chaskey 7DL=1.5DC + 4DL + 1.5LC, verify our new 4DL, v0[31] to v3[11]
 	double start = 1.5, end = 5.5;

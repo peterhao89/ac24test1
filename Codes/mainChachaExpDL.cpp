@@ -2,7 +2,7 @@
 #include "basics.h"
 #include <fstream>
 #include <string>
-#include<windows.h>
+//#include<windows.h>
 #include<omp.h>
 #include <iostream>
 #include<vector>
@@ -1984,7 +1984,7 @@ double getChachaExpLcCorGivenInOutMasks_r14r14half(string fileName, uint32_t inM
 }
 
 
-void main()
+int main()
 {
 
 #if 0 //construct Subs set from R1 to R3. R0: 1-bit input v13[i] --> R1: all32NextDiffR2[i].diffVal --> R3: prepare sub set

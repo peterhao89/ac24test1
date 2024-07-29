@@ -1,3 +1,0 @@
-Alzette: 7DL(R2 to R9) experimental COR: [57]->[47], 0.000409803, -11.2528
-Alzette: 7DL(R2 to R9) experimental COR: [57]->[47,46], 0.000479639, -11.0258
-Multi time:7694.5

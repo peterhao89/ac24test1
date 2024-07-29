@@ -2,7 +2,7 @@
 #include "basics.h"
 #include <fstream>
 #include <string>
-#include<windows.h>
+//#include<windows.h>
 #include<omp.h>
 #include <iostream>
 #include<vector>
@@ -254,7 +254,7 @@ void getSpeck128SubsSetDiffWt1(string fileName, uint8_t inDiffIdx[], int diffNum
 	fout.close();
 }
 
-void main()
+int main()
 {
 
 #if 0 //prepare SUBs set for 8DL

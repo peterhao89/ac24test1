@@ -2,7 +2,7 @@
 #include "basics.h"
 #include <fstream>
 #include <string>
-#include<windows.h>
+//#include<windows.h>
 #include<omp.h>
 #include <iostream>
 #include<vector>
@@ -239,7 +239,7 @@ void getSpeck64SubsSetDiffWt1(string fileName, uint8_t inDiffIdx[], int diffNum,
 
 }
 
-void main()
+int main()
 {
 #if 0 //verify our new 5DL for 11-round
 	int start = 3, end = 8;

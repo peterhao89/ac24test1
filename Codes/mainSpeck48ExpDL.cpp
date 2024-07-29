@@ -2,7 +2,7 @@
 #include "basics.h"
 #include <fstream>
 #include <string>
-#include<windows.h>
+//#include<windows.h>
 #include<omp.h>
 #include <iostream>
 #include<vector>
@@ -239,7 +239,7 @@ void getSpeck48ExpDlCorGiven1Diff1MaskIdx(string fileName, uint8_t oneInDiffIdx[
 }
 
 
-void main()
+int main()
 {
 #if 0 //prepare SUBs set for 5DL
 	int start = 2, end = 7;

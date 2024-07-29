@@ -2,7 +2,7 @@
 #include "basics.h"
 #include <fstream>
 #include <string>
-#include<windows.h>
+//#include<windows.h>
 #include<omp.h>
 #include <iostream>
 #include<vector>
@@ -329,7 +329,7 @@ void getAlzetteExpLcCorGivenInOutMasks(string fileName, uint32_t inMask[2], uint
 }
 
 
-void main()
+int main()
 {
 #if 1 //verify 7DL for our new 13- and 14-round DL
 	int start = 3, end = 10;

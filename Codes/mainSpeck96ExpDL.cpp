@@ -2,7 +2,7 @@
 #include "basics.h"
 #include <fstream>
 #include <string>
-#include<windows.h>
+//#include<windows.h>
 #include<omp.h>
 #include <iostream>
 #include<vector>
@@ -315,7 +315,7 @@ void getSpeck96ExpLcCorGivenDiffMask(string fileName, TYPE inMask[2], TYPE outMa
 	fout.close();
 }
 
-void main()
+int main()
 {
 #if 0 //prepare SUBs sets for 6DL
 	int start = 4, end = 10;

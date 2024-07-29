@@ -1,7 +1,7 @@
 #include "basics.h"
 #include <fstream>
 #include <string>
-#include<windows.h>
+//#include<windows.h>
 #include<omp.h>
 #include <iostream>
 using namespace std;
@@ -148,7 +148,7 @@ void getSpeck32ExpDlCorGiven1Diff1MaskIdx(string fileName, uint8_t oneInDiffIdx[
     fout.close();
 }
 
-void main()
+int main()
 {
 #if 1
     int start = 3, end = 7;
