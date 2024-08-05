@@ -328,7 +328,6 @@ vector< vector<double>> getSalsaSubForGivenDiffandAllSingleBitMasks_avx_r4r14(st
 	{
 		TYPE input[16] = { 0 };
 		for (auto i = 0; i < 16; i++) input[i] = (dis(gen)) & 0xffffffff;
-		for (auto i = 0; i < 4; i++) input[4 * (i % 3) + i] = constants[i];
 		__m128i in[4], out[4];
 		for (auto i = 0; i < 4; i++)
 		{
@@ -413,7 +412,6 @@ vector< vector<double>> getSalsaSubForGivenDiffandAllSingleBitMasks_avx_r4r15(st
 	{
 		TYPE input[16] = { 0 };
 		for (auto i = 0; i < 16; i++) input[i] = (dis(gen)) & 0xffffffff;
-		for (auto i = 0; i < 4; i++) input[4 * (i % 3) + i] = constants[i];
 		__m128i in[4], out[4];
 		for (auto i = 0; i < 4; i++)//{ i, 4 + ((1 + i) % 4), 8 + ((2 + i) % 4), 12 + ((3 + i) % 4) }
 		{
@@ -504,7 +502,6 @@ void getSalsaExpDlCorGivenDiffandOneSingleBitMask_r4r16(string fileName, uint32_
 	{
 		TYPE input[16] = { 0 };
 		for (auto i = 0; i < 16; i++) input[i] = (dis(gen)) & 0xffffffff;
-		for (auto i = 0; i < 4; i++) input[4 * (i % 3) + i] = constants[i];
 		__m128i in[4], out[4];
 		for (auto i = 0; i < 4; i++)
 		{
@@ -563,7 +560,6 @@ void getSalsaExpDlCorGivenDiffandThreeSingleBitMask_r4r16(string fileName, uint3
 	{
 		TYPE input[16] = { 0 };
 		for (auto i = 0; i < 16; i++) input[i] = (dis(gen)) & 0xffffffff;
-		for (auto i = 0; i < 4; i++) input[4 * (i % 3) + i] = constants[i];
 		__m128i in[4], out[4];
 		for (auto i = 0; i < 4; i++)
 		{
@@ -620,7 +616,6 @@ void getSalsaExpLcCorGivenInOutMasks_r20r28(string fileName, uint32_t inMask[16]
 	for (int64_t exper = 0; exper < datasize; exper++)
 	{
 		TYPE input[16] = { 0 }; for (auto i = 0; i < 16; i++) input[i] = (dis(gen)) & 0xffffffff;
-		for (auto i = 0; i < 4; i++) input[4 * (i % 3) + i] = constants[i];
 		bool bitIn = 0;
 		for (auto i = 0; i < 16; i++)
 		{
@@ -689,7 +684,6 @@ void getSalsaExpLcCorGivenInOutMasks_r28r32_partition(string fileName, uint32_t 
 	for (int64_t exper = 0; exper < datasize; exper++)
 	{
 		TYPE input[16] = { 0 }; for (auto i = 0; i < 16; i++) input[i] = (dis(gen)) & 0xffffffff;
-		for (auto i = 0; i < 4; i++) input[4 * (i % 3) + i] = constants[i];
 		bool bitIn[4] = { 0 };
 		for (int pt = 0; pt < 4; pt++)
 		{

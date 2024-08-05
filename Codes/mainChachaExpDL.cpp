@@ -834,8 +834,8 @@ void getChachaExpDlCorGivenDiffMask(string fileName, uint32_t diff[16], uint32_t
 #pragma omp parallel for reduction(+:cnt)
 	for (int64_t exper = 0; exper < datasize; exper++)
 	{
-		TYPE input[16] = { 0 }; for (auto i = 0; i < 4; i++) input[i] = constants[i];
-		for (auto i = 4; i < 16; i++) input[i] = (dis(gen)) & 0xffffffff;
+		TYPE input[16] = { 0 }; 
+		for (auto i = 0; i < 16; i++) input[i] = (dis(gen)) & 0xffffffff;
 		TYPE output[16] = { 0 };
 		chachaStartEnd(input, output, start, end);
 		//std::printf("(%x,%x,%x,%x),(%x,%x,%x,%x)\n", input[0], input[1], input[2], input[3], output[0], output[1], output[2], output[3]);
@@ -900,8 +900,8 @@ void getChachaExpDlCorGivenDiffMask_r2r6(string fileName, uint32_t diff[16], uin
 #pragma omp parallel for reduction(+:cnt)
 	for (int64_t exper = 0; exper < datasize; exper++)
 	{
-		TYPE input[16] = { 0 }; for (auto i = 0; i < 4; i++) input[i] = constants[i];
-		for (auto i = 4; i < 16; i++) input[i] = (dis(gen)) & 0xffffffff;
+		TYPE input[16] = { 0 }; 
+		for (auto i = 0; i < 16; i++) input[i] = (dis(gen)) & 0xffffffff;
 		__m128i in[4], out[4];
 		for (auto i = 0; i < 4; i++)
 		{
@@ -972,8 +972,8 @@ double getChachaExpDlCorGivenDiffandLsbMask(string fileName, uint32_t diff[16], 
 #pragma omp parallel for reduction(+:cnt)
 	for (int64_t exper = 0; exper < datasize; exper++)
 	{
-		TYPE input[16] = { 0 }, output[16] = { 0 }; for (auto i = 0; i < 4; i++) input[i] = constants[i];
-		for (auto i = 4; i < 16; i++) input[i] = (dis(gen)) & 0xffffffff;
+		TYPE input[16] = { 0 }, output[16] = { 0 }; 
+		for (auto i = 0; i < 16; i++) input[i] = (dis(gen)) & 0xffffffff;
 		chachaStartEnd(input, output, start, end);
 		//std::printf("(%x,%x,%x,%x),(%x,%x,%x,%x)\n", input[0], input[1], input[2], input[3], output[0], output[1], output[2], output[3]);
 		TYPE input_prime[16] = { 0 }, output_prime[16] = { 0 };
@@ -1022,8 +1022,8 @@ double getChachaExpDlCorGivenDiffandLsbMask_r2r7(string fileName, uint32_t diff[
 #pragma omp parallel for reduction(+:cnt)
 	for (int64_t exper = 0; exper < datasize; exper++)
 	{
-		TYPE input[16] = { 0 }; for (auto i = 0; i < 4; i++) input[i] = constants[i];
-		for (auto i = 4; i < 16; i++) input[i] = (dis(gen)) & 0xffffffff;
+		TYPE input[16] = { 0 }; 
+		for (auto i = 0; i < 16; i++) input[i] = (dis(gen)) & 0xffffffff;
 		__m128i in[4], out[4];
 		for (auto i = 0; i < 4; i++)
 		{
@@ -1080,8 +1080,8 @@ double getChachaExpDlCorGivenDiffandLsbMask_r2r6(string fileName, uint32_t diff[
 #pragma omp parallel for reduction(+:cnt)
 	for (int64_t exper = 0; exper < datasize; exper++)
 	{
-		TYPE input[16] = { 0 }; for (auto i = 0; i < 4; i++) input[i] = constants[i];
-		for (auto i = 4; i < 16; i++) input[i] = (dis(gen)) & 0xffffffff;
+		TYPE input[16] = { 0 }; 
+		for (auto i = 0; i < 16; i++) input[i] = (dis(gen)) & 0xffffffff;
 		__m128i in[4], out[4];
 		for (auto i = 0; i < 4; i++)
 		{
@@ -1156,8 +1156,8 @@ void getChachaExpDlCorGivenDiffandLsbMask_r2r6r7(string fileName, uint32_t diff[
 #pragma omp parallel for reduction(+:cntDiffR6_0,cntDiffR6_1,cntR7_0,cntR7_1)
 	for (int64_t exper = 0; exper < datasize; exper++)
 	{
-		TYPE input[16] = { 0 }; for (auto i = 0; i < 4; i++) input[i] = constants[i];
-		for (auto i = 4; i < 16; i++) input[i] = (dis(gen)) & 0xffffffff;
+		TYPE input[16] = { 0 }; 
+		for (auto i = 0; i < 16; i++) input[i] = (dis(gen)) & 0xffffffff;
 		__m128i in[4], outR6[4], outR7[4];
 		for (auto i = 0; i < 4; i++)
 		{
@@ -1228,8 +1228,8 @@ void getChachaExpDlCorGivenDiffandLsbMask_r2r6r6(string fileName, uint32_t diff[
 #pragma omp parallel for reduction(+:bEq0,bEq1,aDiff_bEq0,aDiff_bEq1)
 	for (int64_t exper = 0; exper < datasize; exper++)
 	{
-		TYPE input[16] = { 0 }; for (auto i = 0; i < 4; i++) input[i] = constants[i];
-		for (auto i = 4; i < 16; i++) input[i] = (dis(gen)) & 0xffffffff;
+		TYPE input[16] = { 0 }; 
+		for (auto i = 0; i < 16; i++) input[i] = (dis(gen)) & 0xffffffff;
 		__m128i in[4], outR6[4], outR7[4];
 		for (auto i = 0; i < 4; i++)
 		{
@@ -1301,8 +1301,8 @@ void getChachaExpDlCorGivenDiffandLsbMask_r2r6r6r7(string fileName, uint32_t dif
 #pragma omp parallel for reduction(+:bEq0,bEq1,a1bEq00,a1bEq01,a1bEq10,a1bEq11,a1Diff_bEq0,a1Diff_bEq1,a0Diff_a1bEq00,a0Diff_a1bEq01,a0Diff_a1bEq10,a0Diff_a1bEq11)
 	for (int64_t exper = 0; exper < datasize; exper++)
 	{
-		TYPE input[16] = { 0 }; for (auto i = 0; i < 4; i++) input[i] = constants[i];
-		for (auto i = 4; i < 16; i++) input[i] = (dis(gen)) & 0xffffffff;
+		TYPE input[16] = { 0 }; 
+		for (auto i = 0; i < 16; i++) input[i] = (dis(gen)) & 0xffffffff;
 		__m128i in[4], outR6[4], outR7[4];
 		for (auto i = 0; i < 4; i++)
 		{
@@ -1413,8 +1413,8 @@ vector< vector<double>> getChachaSubForGivenDiffatBranch4andAllSingleBitMasks_av
 	ofstream fout(fileName, ios::out);
 	for (int64_t exper = 0; exper < datasize; exper++)
 	{
-		TYPE input[16] = { 0 }; for (auto i = 0; i < 4; i++) input[i] = constants[i];
-		for (auto i = 4; i < 16; i++) input[i] = (dis(gen)) & 0xffffffff;
+		TYPE input[16] = { 0 }; 
+		for (auto i = 0; i < 16; i++) input[i] = (dis(gen)) & 0xffffffff;
 		__m128i in[4], out[4];
 		for (auto i = 0; i < 4; i++)
 		{
@@ -1501,8 +1501,8 @@ double getChachaExpLcCorGivenInOutMasks_r7r12(string fileName, uint32_t inMask[1
 #pragma omp parallel for reduction(+:cnt)
 	for (int64_t exper = 0; exper < datasize; exper++)
 	{
-		TYPE input[16] = { 0 }; for (auto i = 0; i < 4; i++) input[i] = constants[i];
-		for (auto i = 4; i < 16; i++) input[i] = (dis(gen)) & 0xffffffff;
+		TYPE input[16] = { 0 }; 
+		for (auto i = 0; i < 16; i++) input[i] = (dis(gen)) & 0xffffffff;
 		bool bitIn = 0;
 		for (auto i = 0; i < 16; i++)
 		{
@@ -1572,8 +1572,8 @@ double getChachaExpLcCorGivenInOutMasks_r12r12half(string fileName, uint32_t inM
 #pragma omp parallel for reduction(+:cnt)
 	for (int64_t exper = 0; exper < datasize; exper++)
 	{
-		TYPE input[16] = { 0 }; for (auto i = 0; i < 4; i++) input[i] = constants[i];
-		for (auto i = 4; i < 16; i++) input[i] = (dis(gen)) & 0xffffffff;
+		TYPE input[16] = { 0 }; 
+		for (auto i = 0; i < 16; i++) input[i] = (dis(gen)) & 0xffffffff;
 		bool bitIn = 0;
 		for (auto i = 0; i < 16; i++)
 		{
@@ -1642,8 +1642,8 @@ double getChachaExpLcCorGivenInOutMasks_r12halfr13(string fileName, uint32_t inM
 #pragma omp parallel for reduction(+:cnt)
 	for (int64_t exper = 0; exper < datasize; exper++)
 	{
-		TYPE input[16] = { 0 }; for (auto i = 0; i < 4; i++) input[i] = constants[i];
-		for (auto i = 4; i < 16; i++) input[i] = (dis(gen)) & 0xffffffff;
+		TYPE input[16] = { 0 }; 
+		for (auto i = 0; i < 16; i++) input[i] = (dis(gen)) & 0xffffffff;
 		bool bitIn = 0;
 		for (auto i = 0; i < 16; i++)
 		{
@@ -1712,8 +1712,8 @@ double getChachaExpLcCorGivenInOutMasks_r12r13(string fileName, uint32_t inMask[
 #pragma omp parallel for reduction(+:cnt)
 	for (int64_t exper = 0; exper < datasize; exper++)
 	{
-		TYPE input[16] = { 0 }; for (auto i = 0; i < 4; i++) input[i] = constants[i];
-		for (auto i = 4; i < 16; i++) input[i] = (dis(gen)) & 0xffffffff;
+		TYPE input[16] = { 0 }; 
+		for (auto i = 0; i < 16; i++) input[i] = (dis(gen)) & 0xffffffff;
 		bool bitIn = 0;
 		for (auto i = 0; i < 16; i++)
 		{
@@ -1782,8 +1782,8 @@ double getChachaExpLcCorGivenInOutMasks_r13r13half(string fileName, uint32_t inM
 #pragma omp parallel for reduction(+:cnt)
 	for (int64_t exper = 0; exper < datasize; exper++)
 	{
-		TYPE input[16] = { 0 }; for (auto i = 0; i < 4; i++) input[i] = constants[i];
-		for (auto i = 4; i < 16; i++) input[i] = (dis(gen)) & 0xffffffff;
+		TYPE input[16] = { 0 }; 
+		for (auto i = 0; i < 16; i++) input[i] = (dis(gen)) & 0xffffffff;
 		bool bitIn = 0;
 		for (auto i = 0; i < 16; i++)
 		{
@@ -1852,8 +1852,8 @@ double getChachaExpLcCorGivenInOutMasks_r13halfr14(string fileName, uint32_t inM
 #pragma omp parallel for reduction(+:cnt)
 	for (int64_t exper = 0; exper < datasize; exper++)
 	{
-		TYPE input[16] = { 0 }; for (auto i = 0; i < 4; i++) input[i] = constants[i];
-		for (auto i = 4; i < 16; i++) input[i] = (dis(gen)) & 0xffffffff;
+		TYPE input[16] = { 0 }; 
+		for (auto i = 0; i < 16; i++) input[i] = (dis(gen)) & 0xffffffff;
 		bool bitIn = 0;
 		for (auto i = 0; i < 16; i++)
 		{
@@ -1922,8 +1922,8 @@ double getChachaExpLcCorGivenInOutMasks_r14r14half(string fileName, uint32_t inM
 #pragma omp parallel for reduction(+:cnt)
 	for (int64_t exper = 0; exper < datasize; exper++)
 	{
-		TYPE input[16] = { 0 }; for (auto i = 0; i < 4; i++) input[i] = constants[i];
-		for (auto i = 4; i < 16; i++) input[i] = (dis(gen)) & 0xffffffff;
+		TYPE input[16] = { 0 }; 
+		for (auto i = 0; i < 16; i++) input[i] = (dis(gen)) & 0xffffffff;
 		bool bitIn = 0;
 		for (auto i = 0; i < 16; i++)
 		{
